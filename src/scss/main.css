@@ -1,0 +1,18 @@
+.nav {
+  width: 100%;
+  background-color: gold;
+}
+
+.nav__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__box .flag {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */

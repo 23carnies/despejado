@@ -1,0 +1,17 @@
+$primary-color: #272727;
+$accent-color: #fe3411;
+$text-color: #fff;
+$clock-color: #0000ff;
+
+@mixin flex-center($flex-direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

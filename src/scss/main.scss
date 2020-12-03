@@ -1,3 +1,6 @@
+@import 'config';
+
+
 .nav {
     width: 100%;
     background-color: gold;
@@ -12,4 +15,17 @@
             width: 100px;
         }
     }
+}
+
+.main {
+    height: 100vh;
+    background-color: $primary-color;
+    color: $text-color;
+    @include flex-start;
+}
+
+.clock {
+    background-color: $accent-color;
+    height: 300px;
+
 }

@@ -1,18 +1,8 @@
 import React, { Component } from 'react';
 
-class Weather extends Component {
-    state = {  }
-
-    componentDidMount() {
-        const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${req.body.city},${req.body.country}&appid=${process.env.WEATHER_API_KEY}`;
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((data) => console.log('Aqui es tu data', data))
-    }
-
-    render() { 
-        return ( 
-            <>
+const Tiempo = () => {
+    return ( 
+        <>
         {weatherData ?
         <div>
             <h3>El tiempo para {weatherData.name}</h3>
@@ -28,8 +18,7 @@ class Weather extends Component {
             <p>Loading...</p>
         }
         </>
-         );
-    }
+     );
 }
  
-export default Weather;
+export default Tiempo;

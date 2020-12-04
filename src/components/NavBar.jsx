@@ -4,10 +4,10 @@ import '../scss/main.css'
 
 class NavBar extends Component {
     state = {
-        language: 'english'
+        // language: 'english'
     }
 
-    handleLanguageClick = (e, { active }) => this.setState({ language: active })
+    handleChangeLanguage = (e, { active }) => this.setState({ language: active })
 
     render() { 
         const { language } = this.state
@@ -19,9 +19,9 @@ class NavBar extends Component {
             <Link 
                 to="/eng"
                 active={language === 'english'}
-                onClick={this.handleLanguageClick}
+                onClick={this.handleChangeLanguage}
                 >
-                <img src="images/union-jack.jpg" alt="UK Flag|Bandera del Reino Unido" className="flag"/>
+                <img src="https://bit.ly/3g1ym2k" alt="English|Inglés" data-language="en"/>
                  english </Link>
             </div>
             :
@@ -29,9 +29,9 @@ class NavBar extends Component {
             <Link 
                 to="/es"
                 active={language === 'español'}
-                onClick={this.handleLanguageClick}
+                onClick={this.handleChangeLanguage}
                 >
-                <img src="images/Spain.png" alt="Spanish Flag|Bandera del españa" className="flag"/>
+                <img src="https://bit.ly/33FGksQ" alt="Español|Spanish" data-language="es"/>
                  español </Link>
             </div>
             }

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const Tiempo = () => {
+const TiempoTarjeta = ({ weatherData }) => {
     return ( 
         <>
-        {weatherData ?
         <div>
             <h3>El tiempo para {weatherData.name}</h3>
             <h4>El tiempo actual: {weatherData.weather.main}</h4>
@@ -14,11 +13,9 @@ const Tiempo = () => {
             <h4>El amanecer: {weatherData.sys.sunrise}</h4>
             <h4>El atardecer: {weatherData.sys.sunset}</h4>
         </div>
-            :
-            <p>Loading...</p>
-        }
+
         </>
      );
 }
  
-export default Tiempo;
+export default TiempoTarjeta;

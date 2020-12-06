@@ -5,7 +5,7 @@ import { getByCityCountry } from '../services/api-call'
 
 class WeatherQuery extends Component {
     state = { 
-        weatherData: []
+        weatherData: null
      }
 
     handleWeatherQuery = async (formData) => {
@@ -19,9 +19,19 @@ class WeatherQuery extends Component {
         return ( 
             <>
             <SearchForm handleWeatherQuery={this.handleWeatherQuery} />
-            
+            {(this.state.weatherData !== null) ?
+            // <p>weather data here</p>
+            <WeatherCard 
+                weatherData={this.state.weatherData}
+            />
+            // : (this.state.weatherData.message === 'city not found') ?
+            // <p>Sorry, could not find that city. Make sure you are 
+            //     entering city name and two letter country code.</p>
+            :
+            <p>Welcome, please enter your City and Country</p>
+            }
             </>
-         );
+        );
     }
 }
  

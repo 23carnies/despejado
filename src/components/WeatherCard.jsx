@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Weather = ({ weatherData }) => {
+const WeatherCard = ({ weatherData }) => {
     return ( 
         <>
-
         <div>
             <h3>Weather for {weatherData.name}</h3>
             <h4>Current Weather: {weatherData.weather.main}</h4>
@@ -14,14 +13,8 @@ const Weather = ({ weatherData }) => {
             <h4>Sunrise: {weatherData.sys.sunrise}</h4>
             <h4>Sunset: {weatherData.sys.sunset}</h4>
         </div>
-
         </>
      );
 }
  
-export default Weather;
-
-// {weatherData ?
-//     :
-//     <p>Loading...</p>
-// }
+export default WeatherCard;

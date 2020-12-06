@@ -7,7 +7,9 @@ import WeatherQuery from '../../components/WeatherQuery';
 
 
 class App extends Component {
-  state = {  }
+  state = { 
+    
+   }
   render() { 
     return (
       <>

@@ -4,6 +4,7 @@ import '../../scss/main.css';
 import NavBar from '../../components/NavBar'
 import Clock from '../../components/Clock'
 import WeatherQuery from '../../components/WeatherQuery';
+import PreguntaDeTiempo from '../../components/PreguntaDeTiempo';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <h1>Despejado</h1>
         <Clock />
         <WeatherQuery />
+        <PreguntaDeTiempo />
       </main>
       </>
     );

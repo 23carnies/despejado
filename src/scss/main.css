@@ -1,11 +1,18 @@
+@charset "UTF-8";
 .nav {
   width: 100%;
   background-color: gold;
 }
+
 .nav__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .nav__box .flag {
   width: 100px;
 }
@@ -14,13 +21,89 @@
   height: 100vh;
   background-color: #272727;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal {
+  height: 100vh;
+  background-color: #272727;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clock {
   background-color: #fe3411;
   height: 300px;
 }
+
+.card {
+  width: 90%;
+  margin: 3% 1% 1% 1%;
+  padding: 5%;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 3px 6px white;
+          box-shadow: 1px 3px 6px white;
+}
+
+.card__inner {
+  padding: 5%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #272727;
+  text-align: center;
+}
+
+.card--english {
+  background-image: url("https://i.imgur.com/NuP4KPz.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card--español {
+  background-image: url("https://i.imgur.com/VIw6jy5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  margin: 1%;
+}
+
+form input {
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 35%;
+}
+
+form button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f85b06;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=main.css.map */

@@ -24,8 +24,63 @@
     @include flex-start;
 }
 
+.principal {
+    height: 100vh;
+    background-color: $primary-color;
+    color: $text-color;
+    @include flex-start;
+}
+
 .clock {
     background-color: $accent-color;
     height: 300px;
+    
+}
 
+.card {
+    width: 90%;
+    margin: 3% 1% 1% 1%;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 1px 3px 6px white;
+    
+    &__inner {
+        padding: 5%;
+        // width: 98%;
+        border-radius: 8px;
+        background-color: rgba(255,255,255,.3);
+        color: $primary-color;
+        text-align: center;
+    }
+
+    &--english {
+        background-image: url('https://i.imgur.com/NuP4KPz.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    &--español {
+        background-image: url('https://i.imgur.com/VIw6jy5.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
+
+form {
+    margin: 1%;
+
+    input {
+        margin: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        max-width: 35%;
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(248, 91, 6);
+        color: whitesmoke;
+    }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import '../../scss/main.css';
-// import NavBar from '../../components/NavBar'
 import Clock from '../../components/English/Clock'
 import Reloj from '../../components/Español/Reloj'
 import WeatherQuery from '../../components/English/WeatherQuery';
@@ -9,12 +8,11 @@ import PreguntaDelTiempo from '../../components/Español/PreguntaDelTiempo';
 import NavBarEng from '../../components/English/NavBarEng';
 import NavBarEsp from '../../components/Español/NavBarEsp';
 
-// const languages = ['english', 'español'];
+let userlanguage = (window.navigator.language === 'en-US' || window.navigator.language === 'en-GB') ? 'en-US' : 'es-MX';
 
 class App extends Component {
   state = { 
-    // langIdx: 0
-    language: 'english'
+    language: userlanguage
   }
 
   handleChangeLanguage = (language) => {
@@ -24,7 +22,7 @@ class App extends Component {
   render() { 
     return (
       <>
-      {this.state.language === 'english' ?
+      {this.state.language === 'en-US' ?
       <>
         <NavBarEng 
           language={this.state.language}
@@ -49,18 +47,9 @@ class App extends Component {
         </section>
       </>
       }
-
       </>
     );
   }
 }
  
 export default App;
-
-{/* <NavBar />
-<main className="main">
-  <h1>Despejado</h1>
-  <Clock />
-  <WeatherQuery />
-  <PreguntaDelTiempo />
-</main> */}

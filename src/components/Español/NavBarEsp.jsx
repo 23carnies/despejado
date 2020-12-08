@@ -6,7 +6,7 @@ const NavBarEsp = (props) => {
     return ( 
         <nav className="nav">
             <button
-                onClick={() => props.handleChangeLanguage('english')}
+                onClick={() => props.handleChangeLanguage('en-US')}
                 className="nav__btn"
             >
                 <img src="https://bit.ly/3g1ym2k" alt="English|Inglés" className="nav__btn--flag"/>

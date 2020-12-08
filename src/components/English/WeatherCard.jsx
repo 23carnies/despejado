@@ -16,7 +16,7 @@ const WeatherCard = ({ weatherData }) => {
                 <h4>Humidity: {weatherData.main.humidity}%</h4>
                 <h4>Wind: 
                     {weatherData.wind.speed}mph--
-                    {weatherData.wind.deg}
+                    {/* {weatherData.wind.deg} */}
                     </h4>
                 <h4>Sunrise: {weatherData.sys.sunrise.toLocaleString('en-US')}</h4>
                 <h4>Sunset: {weatherData.sys.sunset.toLocaleString('en-US')}</h4>

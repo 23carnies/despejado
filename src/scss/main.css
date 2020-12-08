@@ -2,6 +2,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #272727;
 }
 
 .nav {
@@ -40,6 +41,10 @@
   width: 50px;
 }
 
+h1 {
+  color: #fff;
+}
+
 .main {
   height: 100vh;
   background-color: #272727;
@@ -47,7 +52,6 @@
   background-size: cover;
   background-position: center;
   border-radius: 5px;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,13 +90,7 @@
           align-items: center;
 }
 
-.clock {
-  background-color: #fe3411;
-  height: 300px;
-}
-
-.welcome {
-  color: #272727;
+.welcome, .time > p {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   padding: 3px;

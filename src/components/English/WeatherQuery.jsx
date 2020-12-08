@@ -11,6 +11,7 @@ class WeatherQuery extends Component {
 
     handleWeatherQuery = async (formData) => {
         const weatherData = await getByCityCountry(formData)
+        console.log(weatherData)
         this.setState({weatherData: weatherData})
     }
 

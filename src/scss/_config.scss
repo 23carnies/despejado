@@ -3,6 +3,12 @@ $accent-color: #fe3411;
 $text-color: #fff;
 $clock-color: #0000ff;
 
+* {
+    // margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @mixin flex-center($flex-direction) {
     display: flex;
     justify-content: center;

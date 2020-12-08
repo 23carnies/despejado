@@ -1,10 +1,13 @@
 @charset "UTF-8";
-.nav {
-  width: 100%;
-  background-color: gold;
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.nav__box {
+.nav {
+  width: 100%;
+  background-color: #fe3411;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +16,19 @@
           justify-content: center;
 }
 
-.nav__box .flag {
+.nav__btn {
+  background-color: #fe3411;
+  border: none;
+}
+
+.nav__btn > p {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.nav__btn--flag {
   width: 100px;
 }
 

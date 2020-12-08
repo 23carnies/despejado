@@ -29,7 +29,7 @@ class WeatherQuery extends Component {
             // <p>Sorry, could not find that city. Make sure you are 
             //     entering city name and two letter country code.</p>
             :
-            <p>Welcome, please enter your City and Country.</p>
+            <p className="welcome">Welcome, please enter your City and Country.</p>
             }
             </section>
         );

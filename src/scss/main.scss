@@ -27,6 +27,8 @@
 .main {
     height: 100vh;
     background-color: $primary-color;
+    background-image: url('https://bit.ly/39Ujxxs');
+    @include background-img;
     color: $text-color;
     @include flex-start;
 }
@@ -34,6 +36,8 @@
 .principal {
     height: 100vh;
     background-color: $primary-color;
+    background-image: url('https://bit.ly/3oz1IZ0');
+    @include background-img;
     color: $text-color;
     @include flex-start;
 }
@@ -42,6 +46,14 @@
     background-color: $accent-color;
     height: 300px;
     
+}
+
+.welcome {
+    color: $primary-color;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 8px;
+    padding: 3px;
+    font-weight: bold;
 }
 
 .card {
@@ -59,16 +71,16 @@
         text-align: center;
     }
 
-    &__english {
-        background-image: url('https://i.imgur.com/NuP4KPz.jpg');
-        @include background-img;
+    // &__english {
+    //     background-image: url('https://i.imgur.com/NuP4KPz.jpg');
+    //     @include background-img;
         
-    }
-    &__español {
-        background-image: url('https://i.imgur.com/VIw6jy5.jpg');
-        @include background-img;
+    // }
+    // &__español {
+    //     background-image: url('https://i.imgur.com/VIw6jy5.jpg');
+    //     @include background-img;
         
-    }
+    // }
 
 
 }

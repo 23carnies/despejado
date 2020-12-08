@@ -24,7 +24,7 @@ class PreguntaDelTiempo extends Component {
                     tiempoDatos={this.state.tiempoDatos}
                 />
             :
-            <p>Bienvenidos, por favor ponga su ciudad y país.</p>
+            <p className="welcome">Bienvenidos, por favor ponga su ciudad y país.</p>
             }
             </section>
          );

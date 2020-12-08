@@ -5,8 +5,8 @@ const TiempoTarjeta = ({ tiempoDatos }) => {
 
 
     return ( 
-        <>
-        <div className="card--español">
+        <div className="card">
+        <div className="card__español">
             <div className="card__inner">
                 <h3>El tiempo para {tiempoDatos.name}</h3>
                 <h4>El tiempo actual: {tiempoDatos.weather[0].main}</h4>
@@ -22,7 +22,7 @@ const TiempoTarjeta = ({ tiempoDatos }) => {
             </div>
         </div>
 
-        </>
+        </div>
      );
 }
  

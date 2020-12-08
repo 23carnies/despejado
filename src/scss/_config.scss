@@ -21,3 +21,9 @@ $clock-color: #0000ff;
     justify-content: flex-start;
     align-items: center;
 }
+
+@mixin background-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}

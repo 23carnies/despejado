@@ -4,10 +4,8 @@
 .nav {
     width: 100%;
     background-color: $accent-color;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    // flex-direction: column;
+    @include flex-center(row);
+    cursor: pointer;
 
     &__btn {
         background-color: $accent-color;
@@ -21,7 +19,7 @@
         }
 
         &--flag {
-            width: 100px;
+            width: 70px;
         }
     }
 }
@@ -48,36 +46,41 @@
 
 .card {
     width: 90%;
-    margin: 3% 1% 1% 1%;
+    margin: 5% 1% 1% 1%;
     padding: 5%;
     border-radius: 8px;
     box-shadow: 1px 3px 6px white;
     
     &__inner {
         padding: 5%;
-        // width: 98%;
+        background-color: rgba(255,255,255,.4);
         border-radius: 8px;
-        background-color: rgba(255,255,255,.3);
         color: $primary-color;
         text-align: center;
     }
 
-    &--english {
+    &__english {
         background-image: url('https://i.imgur.com/NuP4KPz.jpg');
-        background-size: cover;
-        background-position: center;
+        @include background-img;
+        
     }
-    &--español {
+    &__español {
         background-image: url('https://i.imgur.com/VIw6jy5.jpg');
-        background-size: cover;
-        background-position: center;
+        @include background-img;
+        
     }
 
 
 }
 
+.form {
+    @include flex-start();
+    // margin: 0 auto;
+}
+
 form {
     margin: 1%;
+    @include flex-center(row);
 
     input {
         margin: 2px;

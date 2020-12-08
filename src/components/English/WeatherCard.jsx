@@ -6,8 +6,8 @@ const WeatherCard = ({ weatherData }) => {
 
 
     return ( 
-        <>
-        <div className="card--english">
+        <div className="card">
+        <div className="card__english">
             <div className="card__inner">
                 <h3>Weather for {weatherData.name}</h3>
                 <h4>Current Weather: {weatherData.weather[0].main}</h4>
@@ -22,7 +22,7 @@ const WeatherCard = ({ weatherData }) => {
                 <h4>Sunset: {weatherData.sys.sunset}</h4>
             </div>
         </div>
-        </>
+        </div>
      );
 }
  

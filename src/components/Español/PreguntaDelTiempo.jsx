@@ -17,7 +17,7 @@ class PreguntaDelTiempo extends Component {
 
     render() { 
         return ( 
-            <>
+            <section className="form">
             <FormaDeBuscar encargarTiempoDatos={this.encargarTiempoDatos} />
             {(this.state.tiempoDatos !== null) ?
                 <TiempoTarjeta
@@ -26,7 +26,7 @@ class PreguntaDelTiempo extends Component {
             :
             <p>Bienvenidos, por favor ponga su ciudad y país.</p>
             }
-            </>
+            </section>
          );
     }
 }

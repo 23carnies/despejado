@@ -18,7 +18,7 @@ class WeatherQuery extends Component {
 
     render() { 
         return ( 
-            <>
+            <section className="form">
             <SearchForm handleWeatherQuery={this.handleWeatherQuery} />
             {(this.state.weatherData !== null) ?
             // <p>weather data here</p>
@@ -31,7 +31,7 @@ class WeatherQuery extends Component {
             :
             <p>Welcome, please enter your City and Country.</p>
             }
-            </>
+            </section>
         );
     }
 }

@@ -13,7 +13,7 @@ const WeatherCard = ({ weatherData }) => {
                 <h4>Current Weather: {weatherData.weather[0].main}</h4>
                 <h4>Current Temperature: {weatherData.main.temp}℉</h4>
                 <h5>Feels like: {weatherData.main.feels_like}℉</h5>
-                <h4>Humidity: {weatherData.main.humidity}</h4>
+                <h4>Humidity: {weatherData.main.humidity}%</h4>
                 <h4>Wind: 
                     {weatherData.wind.speed}mph--
                     {weatherData.wind.deg}

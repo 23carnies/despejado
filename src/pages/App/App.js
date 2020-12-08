@@ -17,8 +17,8 @@ class App extends Component {
     language: 'english'
   }
 
-  handleChangeLanguage = (e) => {
-    this.setState({ language: e.target.value })
+  handleChangeLanguage = (language) => {
+    this.setState({ language: language })
   }
 
   render() { 

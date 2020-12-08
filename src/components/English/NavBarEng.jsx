@@ -6,8 +6,7 @@ const NavBarEng = (props) => {
     return ( 
         <nav className="nav">
             <button
-                value="español"
-                onClick={props.handleChangeLanguage}
+                onClick={() => props.handleChangeLanguage('español')}
                 className="nav__btn"
             >
                 <img src="https://bit.ly/33FGksQ" alt="Español|Spanish" className="nav__btn--flag"/>
@@ -15,6 +14,6 @@ const NavBarEng = (props) => {
             </button>
         </nav>
      );
-}
+} 
  
 export default NavBarEng;

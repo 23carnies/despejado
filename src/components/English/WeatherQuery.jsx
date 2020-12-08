@@ -11,7 +11,6 @@ class WeatherQuery extends Component {
 
     handleWeatherQuery = async (formData) => {
         const weatherData = await getByCityCountry(formData)
-        // console.log(weatherData)
         this.setState({weatherData: weatherData})
     }
 
@@ -21,7 +20,6 @@ class WeatherQuery extends Component {
             <section className="form">
             <SearchForm handleWeatherQuery={this.handleWeatherQuery} />
             {(this.state.weatherData !== null) ?
-            // <p>weather data here</p>
             <WeatherCard 
                 weatherData={this.state.weatherData}
             />

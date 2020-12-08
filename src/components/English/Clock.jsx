@@ -12,9 +12,9 @@ class Clock extends Component {
         );
     }
 
-    componentWillMount() {
-        clearInterval(this.intervalID)
-    }
+    // componentWillMount() {
+    //     clearInterval(this.intervalID)
+    // }
 
     updateClock() {
         this.setState({

@@ -18,8 +18,8 @@ const WeatherCard = ({ weatherData }) => {
                     {weatherData.wind.speed}mph--
                     {weatherData.wind.deg}
                     </h4>
-                <h4>Sunrise: {weatherData.sys.sunrise}</h4>
-                <h4>Sunset: {weatherData.sys.sunset}</h4>
+                <h4>Sunrise: {weatherData.sys.sunrise.toLocaleString('en-US')}</h4>
+                <h4>Sunset: {weatherData.sys.sunset.toLocaleString('en-US')}</h4>
             </div>
         </div>
         </div>

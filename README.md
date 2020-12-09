@@ -17,7 +17,9 @@ I wanted to build a bilingual app to keep up my Spanish language skills and show
 ## Wireframe | Screenshot | Trello
 ![Wireframe](https://bit.ly/2VMY0yy)
 
-![Wireframe](https://bit.ly/2JA5m67)
+![EnglishScreenshot](https://bit.ly/3qEFNkW)
+
+![EspañolScreenshot](https://bit.ly/3oGzpYJ)
 
 [Trello](https://trello.com/b/iL32H5O7/despejado)
 

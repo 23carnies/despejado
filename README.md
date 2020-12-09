@@ -2,6 +2,8 @@
 
 ### A Bilingual Weather App
 
+[Deploy Despejado](http://despejado.surge.sh/)
+
 ## Objective
 To build a React app using a weather API and returning results in English and in Spanish. 
 
@@ -29,10 +31,16 @@ I wanted to build a bilingual app to keep up my Spanish language skills and show
 - SCSS
 - REST API
 - [OpenWeatherAPI](https://openweathermap.org/)
+- [Sunrise-Sunset API](https://sunrise-sunset.org/api)
 - Postman API Development
 - Git
 
 ## Photo Credits
 - Favicon photo by George Becker from [pexels.com](https://www.pexels.com/@eye4dtail)
+- Mexican street by [Photo by Raul Juarez from Pexels
+](https://www.pexels.com/@raul-juarez-812352?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
+-FlatIron building photo by [Kai Pilger pexels.com](https://www.pexels.com/@kaip?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)
 - Mexican sunset by Pixabay from [pexels.com](https://www.pexels.com/@pixabay)
 - George Washington Bridge by Arthur Brognoli from [pexels.com](https://www.pexels.com/@arthurbrognoli)
+
+[Deploy Despejado](http://despejado.surge.sh/)

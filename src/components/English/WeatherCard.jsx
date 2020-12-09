@@ -1,8 +1,7 @@
 import React from 'react'
 import '../../scss/main.css'
 
-const WeatherCard = ({ weatherData }) => {
-
+const WeatherCard = ({ weatherData, sunData }) => {
 
 
     return ( 
@@ -11,15 +10,21 @@ const WeatherCard = ({ weatherData }) => {
             <div className="card__inner">
                 <h3>Weather for {weatherData.name}</h3>
                 <h4>Current Weather: {weatherData.weather[0].main}</h4>
-                <h4>Current Temperature: {weatherData.main.temp}℉</h4>
-                <h5>Feels like: {weatherData.main.feels_like}℉</h5>
+                <h4>Current Temperature: {weatherData.main.temp.toFixed(0)}℉</h4>
+                <h5>Feels like: {weatherData.main.feels_like.toFixed(0)}℉</h5>
                 <h4>Humidity: {weatherData.main.humidity}%</h4>
                 <h4>Wind: 
-                    {weatherData.wind.speed}mph--
+                    {weatherData.wind.speed}mph
                     {/* {weatherData.wind.deg} */}
                     </h4>
-                <h4>Sunrise: {weatherData.sys.sunrise.toLocaleString('en-US')}</h4>
-                <h4>Sunset: {weatherData.sys.sunset.toLocaleString('en-US')}</h4>
+                {!sunData ?
+                <p>loading...</p>
+                : 
+                <>
+                <h4>Sunrise: {sunData.results.sunrise} UTC</h4>
+                <h4>Sunset: {sunData.results.sunset} UTC</h4>
+                </>
+                }
             </div>
         </div>
         </div>

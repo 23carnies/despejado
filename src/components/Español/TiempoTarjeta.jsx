@@ -11,14 +11,7 @@ const TiempoTarjeta = ({ tiempoDatos, datosDelSol }) => {
         <div className="card__español">
             <div className="card__inner">
                 <h3>El tiempo para {tiempoDatos.name}</h3>
-                <h4>El tiempo actual: {tiempoDatos.weather[0].main}</h4>
-                {weather.forEach((wea, idx) => {
-                    if (tiempoDatos.weather[0].main === wea) {
-                        console.log(wea, idx, clima[idx])
-                        return <h4>El tiempo actual: ${clima[idx]}</h4>
-                        // return idx
-                    }
-                })}
+                <h4>El tiempo actual: {clima[weather.indexOf(tiempoDatos.weather[0].main)]}</h4>
                 <h4>La temperatura: {(tiempoDatos.main.temp).toFixed(0)}℃</h4>
                 <h5>Siente como: {(tiempoDatos.main.feels_like).toFixed(0)}℃</h5>
                 <h4>La humedad: {tiempoDatos.main.humidity}%</h4>

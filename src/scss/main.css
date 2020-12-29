@@ -156,4 +156,76 @@ form button {
   background-color: #f85b06;
   color: whitesmoke;
 }
+
+.skeleton {
+  background: #1e1e1e;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.skeleton__text {
+  width: 90%;
+  height: 12px;
+}
+
+.skeleton__heading {
+  width: 75%;
+  height: 16px;
+}
+
+.skeleton-wrapper {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.shimmer-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: loading 2.5s infinite;
+          animation: loading 2.5s infinite;
+}
+
+.shimmer {
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transform: skewX(-20px);
+          transform: skewX(-20px);
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  50% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  50% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
 /*# sourceMappingURL=main.css.map */

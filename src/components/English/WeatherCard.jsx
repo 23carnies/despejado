@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../scss/main.css'
+import SkeletonSun from '../Skeleton/SkeletonSun'
+import SkeletonWeather from '../Skeleton/SkeletonWeather'
 
 const WeatherCard = ({ weatherData, sunData }) => {
 
@@ -8,6 +10,10 @@ const WeatherCard = ({ weatherData, sunData }) => {
         <div className="card">
         <div className="card__english">
             <div className="card__inner">
+            {!weatherData ?
+            <SkeletonWeather />
+            :
+            <>
                 <h3>Weather for {weatherData.name}</h3>
                 <h4>Current Weather: {weatherData.weather[0].main}</h4>
                 <h4>Current Temperature: {weatherData.main.temp.toFixed(0)}℉</h4>
@@ -18,11 +24,13 @@ const WeatherCard = ({ weatherData, sunData }) => {
                     {/* {weatherData.wind.deg} */}
                     </h4>
                 {!sunData ?
-                <p>loading...</p>
+                <SkeletonSun />
                 : 
                 <>
                 <h4>Sunrise: {sunData.results.sunrise} UTC</h4>
                 <h4>Sunset: {sunData.results.sunset} UTC</h4>
+                </>
+                }
                 </>
                 }
             </div>

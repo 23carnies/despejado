@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../scss/main.css'
+import SkeletonWeather from '../Skeleton/SkeletonWeather'
+import SkeletonSun from '../Skeleton/SkeletonSun'
 
 const TiempoTarjeta = ({ tiempoDatos, datosDelSol }) => {
 
@@ -10,6 +12,10 @@ const TiempoTarjeta = ({ tiempoDatos, datosDelSol }) => {
         <div className="card">
         <div className="card__español">
             <div className="card__inner">
+            {!tiempoDatos ?
+            <SkeletonWeather />
+            :
+            <>    
                 <h3>El tiempo para {tiempoDatos.name}</h3>
                 <h4>El tiempo actual: {clima[weather.indexOf(tiempoDatos.weather[0].main)]}</h4>
                 <h4>La temperatura: {(tiempoDatos.main.temp).toFixed(0)}℃</h4>
@@ -20,12 +26,14 @@ const TiempoTarjeta = ({ tiempoDatos, datosDelSol }) => {
                     {/* {tiempoDatos.wind.deg} */}
                 </h4>
                 {!datosDelSol ?
-                <p>Loading...</p>
+                <SkeletonSun />
                 :
                 <>
                 <h4>El amanecer: {datosDelSol.results.sunrise} UTC</h4>
                 <h4>El atardecer: {datosDelSol.results.sunset} UTC</h4>
                 </>
+            }
+            </>
                 }
             </div>
         </div>
